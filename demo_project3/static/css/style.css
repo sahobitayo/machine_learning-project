@@ -1,0 +1,164 @@
+body {
+	padding: 20;
+	margin: 10;
+}
+
+#map,
+body,
+html {
+	height: 90%;
+}
+
+div #legend {
+	height: 220px;
+	width: 140px;
+	padding: 20px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+div.color-purple {
+	background-color: purple;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+
+div.color-blue {
+	background-color: blue;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+
+div.color-green {
+	background-color: green;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+
+div.color-yellow {
+	background-color: yellow;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+
+div.color-orange {
+	background-color: orange;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+
+div.color-red {
+	background-color: red;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+
+div.info {
+	display: inline-block;
+	padding-left: 15px;
+	padding: .25em;
+}
+
+a.link {
+	color: white;
+}
+.white-font {
+	color: white;
+}
+.jumbotron {
+	text-align: center;
+	color: white;
+	position: relative;
+	background: #0077be;
+	margin-bottom: 0px;
+	background-size: cover;
+	overflow: hidden;
+}
+.button {
+	background-color: white;
+	color: #021b3d;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #76ffff;
+	color: black;
+}
+div.color-purple {
+	background-color: purple;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+div.color-blue {
+	background-color: blue;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+div.color-green {
+	background-color: green;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+div.color-yellow {
+	background-color: yellow;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+div.color-orange {
+	background-color: orange;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+div.color-red {
+	background-color: red;
+	height: 1em;
+	width: 20px;
+	display: inline-block;
+}
+div.info {
+	display: inline-block;
+	padding-left: 15px;
+	padding: .25em;
+}
+.margin_top {
+	margin-top: 10px;
+}
+#map {
+	margin-top: 10px;
+}
+#input {
+	margin-top: 10px;
+}
+.leaflet-control-coordinates {
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	cursor: pointer;
+	padding: 2px 5px;
+}
+
+.leaflet-control-coordinates.hidden {
+	display: none;
+}
+
+.leaflet-control-coordinates-lng {
+	padding-left: 5px;
+}
+.leaflet-container .leaflet-control-mouseposition {
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px #bbb;
+	padding: 0 5px;
+	margin: 0;
+	color: #333;
+	font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
