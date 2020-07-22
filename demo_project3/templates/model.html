@@ -47,10 +47,10 @@
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/data">Data</a>
+            <a class="nav-link text-uppercase text-expanded" href="/data">Approach 1</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/model">Model</a>
+            <a class="nav-link text-uppercase text-expanded" href="/model">Approach 2</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="/analysis">Analysis</a>
@@ -64,27 +64,108 @@
               <a href="/earthquake" class="dropdown-item">Earthquakes</a>
             </div>
           </li>
-          <!-- <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="database.html">Database</a>
-          </li> -->
+
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="page-section about-heading">
+  <section class="page-section cta">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model.png" alt="">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-12 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Neural Network Model</span>
+              <span class="section-heading-lower">Predicting Median Magnitude</span>
+            </h2>
+            <p class="mb-0">Is the predicated earthquake magnitude greater than or equal to the median, 5.4?<br> (1 for
+              yes and 0 for no)<br><br>
+              <p class="mb-0 text-left">
+              1. Import the data<br>
+              2. Split the data into features and labels, (X and y)<br>
+              3. Split the data into test, training, validation (70%, 15%, 15%)<br>
+              4. Did not scale the features due to latitudes and longitudes (creating vectors using lat and long
+              subdivided by the hemispheres,
+              prime meridian and equator) – hard to conceptualize lat and long as independent variables. Dropped
+              decimals and rounded to nearest tens.<br>
+              5. Sequential model in Keras<br>
+              6. Define model - dense layers (neurons and activation - Rectified Linear Unit)<br>
+              7. Compile and Fit model<br><br>
+            </p>
+            </p>
+            <div class="container">
+              <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/network_model.png"
+                alt=""><br><br>
+              <p class="mb-0 text-left">• Input Layer: 5 features (month, latitude, longitude, depth, magnitude)<br>
+                • Hidden layer 1: 32 neurons, ReLU activation<br>
+                • Hidden layer 2: 32 neurons, ReLU activation<br>
+                • Output Layer: 1 neuron, Sigmoid activation (squashing function limit the output to a range between 0
+                and 1)<br>
+                • Compile - Optimizer = sgd (stochastic gradient descent - small subset), loss = binary crossentropy
+                (loss function for output values 1 or 0)<br>
+                • Fit - Batch size 32, Epochs 100 <br>
+                • Batch size 32, Epochs 100<br>
+                • Loss = 0.5678161978721619, accuracy = 0.7360464334487915<br>
+                <br><br>
+                <div class="container">
+                  <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_loss.png"
+                    alt=""><br><br>
+                  <div class="container">
+                    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0"
+                      src="../static/Img/model_accuracy2.png" alt=""><br>
+              </p>
+              <p class="mb-0 text-left">• Input Layer: 5 features (month, latitude, longitude, depth, magnitude)<br>
+                • Hidden layer 1: 250 neurons, ReLU activation<br>
+                • Hidden layer 2: 250 neurons, ReLU activation<br>
+                • Hidden layer 3: 250 neurons, ReLU activation<br>
+                • Hidden layer 4: 250 neurons, ReLU activation<br>
+                • Output Layer: 1 neuron, Sigmoid activation<br>
+                • Compile - Optimizer = adam (stochastic gradient descent – faster, convergence issues), loss = binary
+                crossentropy<br>
+                • Fit - Batch size 32, Epochs 100 <br>
+                • Loss = 0.02778620831668377, accuracy = 0.9915619492530823<br>
+                • Overfitting - L2 regularization and dropout<br>
+                <br><br>
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_loss4.png"
+                  alt=""><br><br>
+                <div class="container">
+                  <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_accuracy4.png"
+                    alt=""><br>
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
+
+  <div class='tableauPlaceholder' id='viz1595434849623' style='position: relative'><noscript><a
+    href='#'><img alt=' '
+      src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ml&#47;ml_TP_Results&#47;Sheet2&#47;1_rss.png'
+      style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+  <param name='embed_code_version' value='3' />
+  <param name='site_root' value='' />
+  <param name='name' value='ml_TP_Results&#47;Sheet2' />
+  <param name='tabs' value='no' />
+  <param name='toolbar' value='yes' />
+  <param name='static_image'
+    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ml&#47;ml_TP_Results&#47;Sheet2&#47;1.png' />
+  <param name='animate_transition' value='yes' />
+  <param name='display_static_image' value='yes' />
+  <param name='display_spinner' value='yes' />
+  <param name='display_overlay' value='yes' />
+  <param name='display_count' value='yes' />
+  <param name='language' value='en' /></object></div>
+<script type='text/javascript'>
+var divElement = document.getElementById('viz1595434849623');
+var vizElement = divElement.getElementsByTagName('object')[0];
+vizElement.style.width = '100%';
+vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">

@@ -37,6 +37,11 @@ p {
   font-family: 'Raleway';
 }
 
+#viscontainer {
+width: 85%;
+margin: 0 auto;
+}
+
 .site-heading .site-heading-upper {
   display: block;
   font-size: 2rem;
@@ -58,6 +63,9 @@ p {
   text-transform: uppercase;
 }
 
+.container {
+  text-align: center;
+}
 .section-heading .section-heading-upper {
   display: block;
   font-size: 1rem;

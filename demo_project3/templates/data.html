@@ -47,10 +47,10 @@
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/data">Data</a>
+            <a class="nav-link text-uppercase text-expanded" href="/data">Approach 1</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/model">Model</a>
+            <a class="nav-link text-uppercase text-expanded" href="/model">Approach 2</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="/analysis">Analysis</a>
@@ -64,66 +64,161 @@
               <a href="/earthquake" class="dropdown-item">Earthquakes</a>
             </div>
           </li>
-          <!-- <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="database.html">Database</a>
-          </li> -->
+
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- <div class='tableauPlaceholder' id='viz1595293370942' style='position: relative'><noscript><a href='#'><img alt=' ' 
-    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ML&#47;ML_Neural_Network_Results&#47;Map&#47;1_rss.png' 
-    style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' 
-      value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' 
-      value='' /><param name='name' value='ML_Neural_Network_Results&#47;Map' /><param name='tabs' value='no' /><param 
-      name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ML&#47;ML_Neural_Network_Results&#47;Map&#47;1.png' /> <param 
-      name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' 
-      value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' 
-      value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    
-      var divElement = document.getElementById('viz1595293370942');                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-      var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
 
-  <section class="page-section about-heading">
+  <section class="page-section cta">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/data1.jpg" alt="">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-12 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-              <div class='tableauPlaceholder' id='viz1595293370942' style='position: relative'><noscript><a
-                    href='#'><img alt=' '
-                      src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ML&#47;ML_Neural_Network_Results&#47;Map&#47;1_rss.png'
-                      style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                  <param name='embed_code_version' value='3' />
-                  <param name='site_root' value='' />
-                  <param name='name' value='ML_Neural_Network_Results&#47;Map' />
-                  <param name='tabs' value='no' />
-                  <param name='toolbar' value='yes' />
-                  <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ML&#47;ML_Neural_Network_Results&#47;Map&#47;1.png' />
-                  <param name='animate_transition' value='yes' />
-                  <param name='display_static_image' value='yes' />
-                  <param name='display_spinner' value='yes' />
-                  <param name='display_overlay' value='yes' />
-                  <param name='display_count' value='yes' />
-                  <param name='language' value='en' />
-                  <param name='filter' value='publish=yes' /></object></div>
-              <script type='text/javascript'>
-                var divElement = document.getElementById('viz1595293370942'); var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-                var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Neural Network</span>
+              <span class="section-heading-lower">Model</span>
+            </h2>
+            <p class="mb-0">Why we choose the Random Forest Model: <br><br>
+
+              It's a robust model that is widely used for preprocessing burden, handling missing values, and it's
+              considering an excellent
+              starting point. With this particular model hit a significant issue regarding time-series data, the model
+              doesn't provide a good
+              accuracy % and a high loss level. Random Forests don't fit very well for increasing or decreasing trends
+              that are usually
+              encountered when dealing with time-series analysis.<br><br>
+              <div class="container">
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/test_sample.png"
+                  alt=""><br><br>
+            </p>
+
+            <p class="mb-0">Since a Random Forest constitutes of Decision Trees, that brings together data with similar
+              categories,
+              information with the intention of classifying it. When the model is evaluated with data that has not seen
+              before, it tries
+              to generate a prediction base on averages values from the training set. If the validation data contain
+              data points that are
+              greater or less than the training data points, the model will provide an average prediction since it is
+              not able to extrapolate
+              the growing / decreasing trend in our data.
+              <br><br>
+              <p class="mb-0">Why we went back to Neural Network <br>
+                With a Neural Network Model we are able to grab information and cluster large, raw data sets, and find
+                patterns creating predictions. One of the benefitis of a Neural Network its is continue learning model
+                as you can see below.
+
+                <br><br>
+                <div class="container">
+                  <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/jupiter_1.png"
+                    alt=""><br><br>
+              </p>
+              <p class="mb-0">By Hypter Tunning this model by customizing the batch size and the number of Epoch we were
+                able to obtain an accuracy of 95% and reduce loos to .2%
+
+                <br><br>
+                <div class="container">
+                  <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/jupiter_2.png"
+                    alt=""><br><br>
+              </p>
+              <p class="mb-0">Using Neural Network Model for prediction with time series data is a good alternative, and
+                we able to generate better predictions as you can see below.
+
+                <br><br>
+                <div class="container">
+                  <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/prediction.png"
+                    alt=""><br><br>
+              </p>
+
+                Setting Up the Neural Network Model<br><br>
+<p class="mb-0 text-left">
+                1. Import the dataset<br>
+                2. Split the data into features and labels, (X and y)<br>
+                3. Split the data into training, test (80%, 20%)<br>
+                4. The data set was not scale, we categorize the date using months since the model was not able to run
+                using year / month / day <br><br>
+                <div class="container"></div>
+                This adjustment of the data set improve the ML Model in terms of its ability to run as it is run.
+                <br><br>
+
+                <div class="container"></div>
+                Below you will see some pictures of the accuracy and loss without having the month categorize. <br>
+              </div>
+
+                <br><br>
+                <div class="container">
+                  <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_loss_j.png"
+                    alt=""><br><br>
+              </p>
+              <div class="container">
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_accuracy_j.png"
+                  alt=""><br><br>
+            </p>
+
+            <p class="mb-0">With data categorized the model was able to learn and improve its accuracy
+              <br><br>
+              <div class="container">
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_accuracy2_j.png"
+                  alt=""><br><br>
+            </p>
+            <div class="container">
+              <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="../static/Img/model_loss2_j.png"
+                alt=""><br><br>
+              </p>
+
+              <p class="mb-0 text-left">
+                5. Sequential model in Keras<br>
+                6. Define model - dense layers (neurons and activation - Rectified Linear Unit)<br>
+                7. Compile and Fit model<br><br>
+              </p>
+
+                <div class="container">
+                Setting Up the Model <br><br>
+
+                <p class="mb-0 text-left">
+                - Input Layer: 3 features (month, latitude, longitude)<br>
+                - Hidden layer 1: 16 neurons, ReLu activation<br>
+                - Hidden layer 2: 16 neurons, ReLu activation<br>
+                - Hidden Layer 3: 2 neurones, Softmax activation<br>
+                - Output Layer: 2 neuron, Sigmoid activation (squashing function limit the output to a range <br>
+                <br><br>
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
-
+<div id="viscontainer" class='text-center'>
+  <div class='tableauPlaceholder' id='viz1595435836234' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ML&#47;ML_Neural_Network_Results&#47;Map&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='ML_Neural_Network_Results&#47;Map' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ML&#47;ML_Neural_Network_Results&#47;Map&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
+  <script type='text/javascript'>
+    var divElement =
+      document.getElementById('viz1595435836234');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</div>
   <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Copyright &copy; The Next One</p>
