@@ -12,7 +12,7 @@ from flask import Flask, jsonify, render_template, send_file
 from flask_sqlalchemy import SQLAlchemy
 from config import ServerName, UserName, Password, DataBase
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 
 
 #################################################
@@ -173,5 +173,5 @@ def output():
 
 
 if __name__ == "__main__":
-    app.debug = False
-    app.run()
+    application.debug = False
+    application.run()
